@@ -1,0 +1,191 @@
+/* Container for the entire app */
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* Title styling */
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Username input styling */
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* File upload section */
+.file-upload-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between label and input */
+    margin-bottom: 20px;
+}
+
+.file-upload-label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="file"] {
+    font-size: 14px;
+}
+
+/* Button styling */
+button {
+    background-color: #28a745; /* Green background */
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* General form spacing */
+div > input, 
+div > button {
+    margin: 10px 0;
+}
+
+/* Chat messages area */
+.chat-messages {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Common message styling */
+.message {
+    display: flex; /* Align profile picture and message horizontally */
+    align-items: flex-start; /* Align items to the top */
+    max-width: 80%;
+    gap: 10px;
+    word-wrap: break-word;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* Styling for messages by the current user */
+.self {
+    background-color: #d4edda;
+    color: #155724;
+    align-self: flex-end;
+}
+
+/* Styling for messages by other users */
+.other {
+    background-color: #f8d7da;
+    color: #721c24;
+    align-self: flex-start;
+}
+
+/* Styling for profile pictures */
+.profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Input area styling */
+.input-area {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.input-area input[type="text"] {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-area button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-area button:hover {
+    background-color: #218838;
+}
+
+/* File upload */
+.file-upload {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.file-upload button {
+    background-color: #007bff;
+    color: white;
+}
+
+.file-upload button:hover {
+    background-color: #0056b3;
+}
+
+/* Notification styling */
+.notification {
+    text-align: center;
+    font-style: italic;
+    color: #6c757d;
+    margin: 10px 0;
+}
+
+/* Username styling */
+.message strong {
+    color: #333; /* Username color */
+    font-weight: bold; /* Make username bold */
+    margin-right: 5px;
+}
+
+/* Text message styling */
+.message p {
+    margin: 0;
+    line-height: 1.4;
+    flex-grow: 1;
+    white-space: pre-wrap;
+}
